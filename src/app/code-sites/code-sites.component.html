@@ -1,0 +1,12 @@
+<ul class="students">
+  <li *ngFor="let codesite of codeSites" (click)="onSelect(codesite)">
+    <a class="badge" href="{{ codesite.URL }}">{{ codesite.name }}</a>
+
+    <i>Rating : {{ codesite.rating }} </i>
+  </li>
+
+</ul>
+
+<p class=students> Click rating to update</p>
+  
+<app-code-site-detail [codesite]="selectedSite"></app-code-site-detail>

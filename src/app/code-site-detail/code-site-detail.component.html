@@ -1,0 +1,23 @@
+
+ <div *ngIf="codesite">     
+        <h2 class="students">{{ codesite.name }} Details</h2>
+        <div class="desc" >Description :<br> </div>
+        <div class="students" ><br> {{ codesite.description }}</div>
+        <label class="students" >URL: </label>
+        <a href="{{ codesite.URL }}">{{codesite.URL }}</a>
+       
+        <div>
+          <br>
+          <label class="students" 
+            >Rating
+            <input
+              class="student"
+              [(ngModel)]="codesite.rating"
+              
+              placeholder="Rate me Please!"
+            />
+          
+          </label>
+        </div>
+        
+   
